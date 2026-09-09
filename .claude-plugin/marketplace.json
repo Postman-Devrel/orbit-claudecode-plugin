@@ -4,13 +4,13 @@
     "name": "Postman DevRel"
   },
   "metadata": {
-    "description": "Agent-friendly API discovery from the Postman API Network"
+    "description": "Agent-friendly API discovery"
   },
   "plugins": [
     {
       "name": "orbit",
       "source": ".",
-      "description": "Discover APIs from the Postman API Network using Postman Orbit, an agent-friendly search API designed for AI-powered app design.",
+      "description": "Discover APIs using Postman Orbit, an agent-friendly search API designed for AI-powered app design.",
       "version": "1.1.0",
       "author": {
         "name": "Postman DevRel"
