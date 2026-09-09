@@ -56,13 +56,11 @@ Multiple capabilities: comma-separated or as separate arguments.
      one-line restatement instead of a real brief. To cover more endpoints, make
      several focused calls grouped by sub-task rather than one wide call.
 
-   Save the returned `taskBrief` to `orbit-output/<slugified-task>-brief.md`. It covers
-   auth requirements, base URLs, ordered request steps, parameters, inter-step
-   dependencies, and gotchas.
+   The returned `taskBrief` covers auth requirements, base URLs, ordered request steps,
+   parameters, inter-step dependencies, and gotchas.
 
-6. **Save and summarize.** Write the search results to
-   `orbit-output/<slugified-query>.md` and present the top matches to the user, leading
-   with the `Not supported:` lines — those are the design gaps worth acting on.
+6. **Summarize.** Present the top matches to the user, leading with the
+   `Not supported:` lines — those are the design gaps worth acting on.
 
 ## Output format
 
