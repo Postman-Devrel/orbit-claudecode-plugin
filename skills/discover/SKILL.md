@@ -1,16 +1,15 @@
 ---
-description: "Discover APIs from the Postman API Network using Orbit's agent-friendly search. Returns endpoints with evaluateGuide fields showing what each API can and can't do, and can generate an integration task brief for the ones you pick."
+description: "Discover APIs using Orbit's agent-friendly search. Returns endpoints with evaluateGuide fields showing what each API can and can't do, and can generate an integration task brief for the ones you pick."
 allowed-tools:
   - "mcp__plugin_orbit_orbit__search"
   - "mcp__plugin_orbit_orbit__integrate"
   - "Bash"
-  - "Write"
   - "Read"
 ---
 
 # orbit:discover
 
-Search the Postman API Network for APIs matching a capability query, then generate an
+Search Orbit for APIs matching a capability query, then generate an
 integration task brief for the endpoints you select.
 
 This plugin bundles Orbit's MCP server, so the `search` and `integrate` tools are
@@ -84,7 +83,7 @@ Group results under `## <capability query>` headings when multiple queries are r
   what it can't do, saving trial-and-error.
 - Both tools are read-only and safe to retry. On a rate-limit error, back off and retry.
 - Orbit is designed for agent consumption (compact payloads, structured guidance) vs
-  human browsing on the Postman API Network website.
+  human browsing of an API catalog in a web UI.
 
 ## Fallback
 

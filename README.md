@@ -1,10 +1,10 @@
 # Orbit Claude Code Plugin
 
-Discover APIs from the [Postman API Network](https://www.postman.com/explore) using Postman Orbit -- an agent-friendly search API designed for AI-powered app design.
+Discover APIs using Postman Orbit, an agent-friendly search API designed for AI-powered app design.
 
 ## What is Orbit?
 
-Orbit is Postman's API discovery service built specifically for AI agent consumption. Unlike browsing the Postman API Network in a browser, Orbit returns compact, structured payloads with `evaluateGuide` fields that tell agents exactly what each API endpoint can and can't do. This lets agents make integration decisions without trial-and-error.
+Orbit is Postman's API discovery service built specifically for AI agent consumption. Unlike browsing an API catalog in a browser, Orbit returns compact, structured payloads with `evaluateGuide` fields that tell agents exactly what each API endpoint can and can't do. This lets agents make integration decisions without trial-and-error.
 
 ## Install
 
@@ -75,7 +75,7 @@ The plugin is a thin workflow layer over Orbit's MCP server:
 | | Provided by |
 |---|---|
 | `search` / `integrate` tools, request + response schemas | Orbit's MCP server (bundled) |
-| Capability decomposition, gap analysis, iteration, saved blueprint | This plugin's skill |
+| Capability decomposition, gap analysis, iteration | This plugin's skill |
 
 Keeping the API contract on the server side means Orbit can change its parameters
 without breaking installed copies of the plugin. If the MCP server is ever
@@ -95,5 +95,4 @@ unreachable, the skill falls back to the documented REST endpoints in
 
 - [Orbit documentation](https://www.buildwithorbit.ai/)
 - [Orbit API reference](https://www.buildwithorbit.ai/api-reference)
-- [Postman API Network](https://www.postman.com/explore)
 - [Claude Code Plugins](https://docs.anthropic.com/en/docs/claude-code/plugins)
