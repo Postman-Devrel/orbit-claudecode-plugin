@@ -3,7 +3,6 @@ description: "Discover APIs using Orbit's agent-friendly search. Returns endpoin
 allowed-tools:
   - "mcp__plugin_orbit_orbit__search"
   - "mcp__plugin_orbit_orbit__integrate"
-  - "Bash"
   - "Read"
 ---
 
@@ -89,5 +88,6 @@ Group results under `## <capability query>` headings when multiple queries are r
 
 If the MCP tools are unavailable — the server is unreachable, or you're running in an
 environment where the plugin's MCP server did not load — read
-`references/orbit-api.md` and call the equivalent REST endpoints with curl. The
+`references/orbit-api.md` and call the equivalent REST endpoints with curl (the user
+approves each command). The
 request and response shapes are identical.
